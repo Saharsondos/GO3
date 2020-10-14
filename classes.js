@@ -25,11 +25,17 @@ class FreeUser extends User{
 }
 
 class interest{
-    constructor(myInterest1, myInterest2, myInterest3){
-        this.myInterest1 = myInterest1;
-        this.myInterest2 = myInterest2;
-        this.myInterest3 = myInterest3;
+    constructor(interest1, interest2, interest3){
+        this.interest1 = interest1;
+        this.interest2 = interest2;
+        this.interest3 = interest3;
     }
 }
 
+
+//my objects/variables for my classes
+var user1 = new User("Ole123", "abcd1234", 32, "Copenhagen", "female", myInterests1);
+var user2 = new User("barbie", "barbiegirl", 27, "malmö", "male", myInterests2);
+var myInterests1 = new interest("cooking", "dancing", "traveling");
+var myInterests2 = new interest("tennis", "cooking", "swimming");
 
