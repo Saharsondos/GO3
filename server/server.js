@@ -12,3 +12,16 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, ()=>{
     console.log("listening at port " + PORT);
 })
+
+//my CRUD-endpoints for user, interest and match respectively
+//user first;
+app.put("/user", function(req, res){
+    res.send(userArray);
+})
+
+app.get("/interest", function(req, res){
+    res.send(interestArray);
+})
+
+app.delete("/match", function(req, res){
+})

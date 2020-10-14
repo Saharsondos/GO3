@@ -1,3 +1,4 @@
+//Define model-classes
 class User{
     constructor(username, password, age, location, preferredSex, interest){
         this.username = username;
@@ -76,3 +77,9 @@ var user2 = new User("barbie", "barbiegirl", 27, "malmö", "male", myInterests2)
 var myInterests1 = new interest("cooking", "dancing", "traveling");
 var myInterests2 = new interest("tennis", "cooking", "swimming");
 
+//array for users
+let userArray = [];
+userArray = [user1, user2];
+//array for interests
+let interestArray = [];
+interestArray = [myInterests1, myInterests2];
