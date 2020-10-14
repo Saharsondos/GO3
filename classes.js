@@ -56,6 +56,19 @@ class interest{
     }
 }
 
+//method for matching in app
+class match{
+    match(){
+        function match(){
+            if((user1.like=user2) && (user2.like=user1)){
+                alert("NEW MATCH!");
+            }else{
+                return(false);
+            }
+        }
+    }
+}
+
 
 //my objects/variables for my classes
 var user1 = new User("Ole123", "abcd1234", 32, "Copenhagen", "female", myInterests1);
