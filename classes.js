@@ -7,6 +7,18 @@ class User{
         this.preferredSex = preferredSex;
         this.interest = interest;
     }
+    uploadImage(){
+        function uploadImage(){
+      }   
+    }
+    like(){
+        function like(){
+        }
+    }
+    sendMessage(){
+        function sendMessage(){
+        }
+    }
 }
 
 //extended paymentuser
@@ -15,12 +27,24 @@ class PaymentUser extends User{
         super(username, password, age, location, preferredSex);
         this.creditCard = creditCard;
     }
+    superLike(){
+        function superLike(){
+        }
+    }
+    whoLikedMe(){
+        function whoLikedMe(){
+        }
+    }
 }
 
 //extended freeuser
 class FreeUser extends User{
     constructor(username, password, age, location, preferredSex){
         super(username, password, age, location, preferredSex);
+    }
+    likeLimit(){
+        function likeLimit(){
+        }
     }
 }
 
