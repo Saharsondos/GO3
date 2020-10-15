@@ -61,7 +61,7 @@ class interest{
 class match{
     match(){
         function match(){
-            if((user1.like=user2) && (user2.like=user1)){
+            if((user1.like==user2) & (user2.like==user1)){
                 alert("NEW MATCH!");
             }else{
                 return(false);
