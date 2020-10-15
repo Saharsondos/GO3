@@ -14,7 +14,6 @@ app.listen(PORT, ()=>{
 })
 
 //my CRUD-endpoints for user, interest and match respectively
-//user first;
 app.put("/user", function(req, res){
     res.send(userArray);
 })
