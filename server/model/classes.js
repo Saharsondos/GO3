@@ -64,7 +64,7 @@ class match{
             if((user1.like==user2) & (user2.like==user1)){
                 alert("NEW MATCH!");
             }else{
-                return(false);
+                return false;
             }
         }
     }
@@ -83,3 +83,5 @@ userArray = [user1, user2];
 //array for interests
 let interestArray = [];
 interestArray = [myInterests1, myInterests2];
+
+module.exports=userArray;
