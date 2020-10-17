@@ -36,8 +36,8 @@ class PaymentUser extends User{
     }
 }
 
-//class for credit card information - extends payment user
-class creditCard extends PaymentUser{
+//class for credit card information
+class creditCard{
     constructor(cardHolderName, cardNumber, expireMonth, expireYear, cvc){
         this.cardHolderName = cardHolderName;
         this.cardNumber = cardNumber;
