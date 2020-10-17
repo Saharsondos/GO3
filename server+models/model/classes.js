@@ -23,9 +23,8 @@ class User{
 
 //extended paymentuser
 class PaymentUser extends User{
-    constructor(username, password, age, location, preferredSex, creditCard){
+    constructor(username, password, age, location, preferredSex){
         super(username, password, age, location, preferredSex);
-        this.creditCard = creditCard;
     }
     superLike(){
         function superLike(){
@@ -34,6 +33,17 @@ class PaymentUser extends User{
     whoLikedMe(){
         function whoLikedMe(){
         }
+    }
+}
+
+//class for credit card information - extends payment user
+class creditCard extends PaymentUser{
+    constructor(cardHolderName, cardNumber, expireMonth, expireYear, cvc){
+        this.cardHolderName = cardHolderName;
+        this.cardNumber = cardNumber;
+        this.expireMonth = expireMonth;
+        this.expireYear = expireYear;
+        this.cvc = cvc;
     }
 }
 
