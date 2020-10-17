@@ -11,7 +11,6 @@ const fs = require("fs");
 //requiring jwt
 const jwt = require("jsonwebtoken");
 
-
 //make sure port 3000 is available
 const PORT = process.env.PORT || 3000;
 
@@ -56,7 +55,7 @@ function isAuthorized(req, res, next){
         let privateKey = fs.readFileSync("./private.pem", "utf8");
         //verify token
         jwt.verify(token, privateKey, { algorithm: "HS256"}, (err, decoded) =>{
-            //if token hasnt been verified successfully 
+            //if token has not been verified successfully 
             if(err){
                 res.status(500).json({ error: "Not authorized" });
             }

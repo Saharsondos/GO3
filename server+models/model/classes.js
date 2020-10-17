@@ -1,12 +1,11 @@
 //Define model-classes
 class User{
-    constructor(username, password, age, location, preferredSex, interest){
+    constructor(username, password, age, location, preferredSex){
         this.username = username;
         this.password = password;
         this.age = age;
         this.location = location;
         this.preferredSex = preferredSex;
-        this.interest = interest;
     }
     uploadImage(){
         function uploadImage(){
@@ -57,8 +56,8 @@ class interest{
     }
 }
 
-//method for matching in app
 class match{
+    //method for matching in app
     match(){
         function match(){
             if((user1.like==user2) & (user2.like==user1)){
@@ -72,8 +71,8 @@ class match{
 
 
 //my objects/variables for my classes
-var user1 = new User("Ole123", "abcd1234", 32, "Copenhagen", "female", myInterests1);
-var user2 = new User("barbie", "barbiegirl", 27, "malmö", "male", myInterests2);
+var user1 = new User("Ole123", "abcd1234", 32, "Copenhagen", "female");
+var user2 = new User("barbie", "barbiegirl", 27, "malmö", "male");
 var myInterests1 = new interest("cooking", "dancing", "traveling");
 var myInterests2 = new interest("tennis", "cooking", "swimming");
 
